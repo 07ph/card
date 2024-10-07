@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="EnemyStats" load_steps=11 format=3 uid="uid://bbo24od4aavfj"]
+
+[ext_resource type="Script" path="res://custom_resources/enemy_stats.gd" id="1_1akn0"]
+[ext_resource type="PackedScene" uid="uid://d3b23v3dpsd60" path="res://enemies/bat/bat_enemy_ai.tscn" id="1_oeu8d"]
+[ext_resource type="Texture2D" uid="uid://dmqpah8dxu76k" path="res://assert/bat/bat/fly_0.png" id="2_se422"]
+[ext_resource type="Texture2D" uid="uid://dmhv8dpg7d8ph" path="res://assert/bat/bat/fly_1.png" id="3_7bjgc"]
+[ext_resource type="Texture2D" uid="uid://bctqft26ycsui" path="res://assert/bat/bat/fly_2.png" id="4_luglp"]
+[ext_resource type="Texture2D" uid="uid://dw1338ob2n8ub" path="res://assert/bat/bat/fly_3.png" id="5_3xo46"]
+[ext_resource type="Texture2D" uid="uid://dljpyf5hp7ra7" path="res://assert/bat/bat/fly_4.png" id="6_nggl3"]
+[ext_resource type="Texture2D" uid="uid://dyot48ra7ho6" path="res://assert/bat/bat/fly_5.png" id="7_5o8t8"]
+[ext_resource type="Texture2D" uid="uid://gdcwa3uua6i4" path="res://assert/bat/bat/fly_6.png" id="8_sikp4"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_ofe4n"]
+frames = 7
+speed_scale = 8.0
+frame_0/texture = ExtResource("2_se422")
+frame_1/texture = ExtResource("3_7bjgc")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4_luglp")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("5_3xo46")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("6_nggl3")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("7_5o8t8")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("8_sikp4")
+frame_6/duration = 1.0
+
+[resource]
+script = ExtResource("1_1akn0")
+ai = ExtResource("1_oeu8d")
+max_health = 8
+art = SubResource("AnimatedTexture_ofe4n")

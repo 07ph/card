@@ -1,0 +1,467 @@
+[gd_scene load_steps=25 format=3 uid="uid://g1ktqepxso0v"]
+
+[ext_resource type="Texture2D" uid="uid://buv7f17ub0yub" path="res://assert/background/Clouds 6/1.png" id="1_8fr12"]
+[ext_resource type="Texture2D" uid="uid://dnv5ggfhkm2kc" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/water_detilazation.png" id="2_dxc7g"]
+[ext_resource type="Texture2D" uid="uid://d3o1v17v4mcv7" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow1_1.png" id="3_ndbio"]
+[ext_resource type="Texture2D" uid="uid://kuhhrt20rgxc" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Rock_shadow3_1.png" id="4_242o1"]
+[ext_resource type="Texture2D" uid="uid://c1t4w42uujvny" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Rock_shadow1_4.png" id="4_uvej4"]
+[ext_resource type="Texture2D" uid="uid://cbsqb0r3w0s5e" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Rock_shadow1_3.png" id="5_xfn2u"]
+[ext_resource type="Texture2D" uid="uid://dmxseg36lf06w" path="res://assert/background/Clouds 6/3.png" id="6_1ll4o"]
+[ext_resource type="Texture2D" uid="uid://cba32u83bodnj" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow3_18.png" id="7_clr7l"]
+[ext_resource type="Texture2D" uid="uid://b3kmfv4uln8yt" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow3_12.png" id="8_m860o"]
+[ext_resource type="Texture2D" uid="uid://bfnfaeeqrk0j3" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow3_11.png" id="9_vcc34"]
+[ext_resource type="Texture2D" uid="uid://dywwpw407n6ch" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow3_7.png" id="10_dtrxi"]
+[ext_resource type="Texture2D" uid="uid://rymxmu47o5aj" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Crystal_shadow1_2.png" id="11_0ygn5"]
+[ext_resource type="Texture2D" uid="uid://banwouua0yrv4" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Crystal_shadow1_3.png" id="12_p1252"]
+[ext_resource type="Texture2D" uid="uid://mwlipp6bkg7w" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Crystal_shadow2_4.png" id="13_6hvtl"]
+[ext_resource type="Texture2D" uid="uid://dd8wvgy7uqxpg" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Crystal_shadow3_3.png" id="14_ryql7"]
+[ext_resource type="Texture2D" uid="uid://bsv43ld8pup2q" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Animation4.png" id="17_xn0cr"]
+[ext_resource type="Texture2D" uid="uid://b3o7hqsqgeguh" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Rock_shadow2_4.png" id="18_0140a"]
+[ext_resource type="Texture2D" uid="uid://bksxgl0qr4fjm" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Ruin_shadow2_4.png" id="19_0rw2o"]
+[ext_resource type="Texture2D" uid="uid://bfif8cqfv5b4k" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Rock_shadow1_5.png" id="19_sko2d"]
+[ext_resource type="Texture2D" uid="uid://bpmt8m53wi242" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Rock_shadow1_2.png" id="20_okx3r"]
+[ext_resource type="Texture2D" uid="uid://d1nu74rm13snn" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Ground_rocks.png" id="23_m071m"]
+
+[sub_resource type="Animation" id="Animation_ivf0u"]
+resource_name = "idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("2/祭台:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [6]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("2/祭台:vframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("2/祭台:region_rect")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 480, 336)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("2/祭台:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.733333, 0.833333, 0.966667, 1.1, 1.23333, 1.36667, 1.5, 1.63333, 1.76667, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+}
+
+[sub_resource type="Animation" id="Animation_i1o5p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("2/祭台:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [6]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("2/祭台:vframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("2/祭台:region_rect")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 480, 336)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("2/祭台:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4gk2f"]
+_data = {
+"RESET": SubResource("Animation_i1o5p"),
+"idle": SubResource("Animation_ivf0u")
+}
+
+[node name="background" type="Node2D"]
+
+[node name="2" type="Sprite2D" parent="."]
+modulate = Color(0.33299, 0.441931, 0.385583, 1)
+position = Vector2(128, 72)
+scale = Vector2(0.444444, 0.444444)
+texture = ExtResource("1_8fr12")
+metadata/_edit_lock_ = true
+
+[node name="WaterDetilazation" type="Sprite2D" parent="2"]
+self_modulate = Color(0.966608, 0.574058, 0.863815, 1)
+position = Vector2(173.25, 92.2501)
+scale = Vector2(0.901786, 1.58594)
+texture = ExtResource("2_dxc7g")
+region_enabled = true
+region_rect = Rect2(0, 0, 224, 32)
+
+[node name="WaterDetilazation2" type="Sprite2D" parent="2/WaterDetilazation"]
+self_modulate = Color(0.966608, 0.574058, 0.863815, 1)
+position = Vector2(-396.713, -11.3497)
+scale = Vector2(1.10891, 1.37931)
+texture = ExtResource("2_dxc7g")
+region_enabled = true
+region_rect = Rect2(288, 198, 192, 33)
+
+[node name="WaterDetilazation3" type="Sprite2D" parent="2/WaterDetilazation/WaterDetilazation2"]
+self_modulate = Color(0.966608, 0.574058, 0.863815, 1)
+position = Vector2(173.25, -6.17142)
+texture = ExtResource("2_dxc7g")
+region_enabled = true
+region_rect = Rect2(0, 0, 224, 32)
+metadata/_edit_lock_ = true
+
+[node name="Node2D" type="Node2D" parent="2"]
+position = Vector2(-288, -162)
+scale = Vector2(2.25, 2.25)
+
+[node name="BonesShadow11" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(237, 99)
+scale = Vector2(0.742621, 0.742621)
+texture = ExtResource("3_ndbio")
+
+[node name="RockShadow31" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(224, 84)
+scale = Vector2(0.444444, 0.444444)
+texture = ExtResource("4_242o1")
+
+[node name="RockShadow32" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(45, 79)
+scale = Vector2(0.444444, 0.444444)
+texture = ExtResource("4_242o1")
+
+[node name="RockShadow16" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(251, 146)
+scale = Vector2(0.742622, 0.742622)
+texture = ExtResource("5_xfn2u")
+
+[node name="RockShadow13" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(147, 78)
+scale = Vector2(0.742622, 0.742622)
+texture = ExtResource("5_xfn2u")
+
+[node name="RockShadow17" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(107, 78)
+scale = Vector2(0.742622, 0.742622)
+texture = ExtResource("5_xfn2u")
+
+[node name="RockShadow18" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(229, 110)
+scale = Vector2(0.742622, 0.742622)
+texture = ExtResource("5_xfn2u")
+flip_h = true
+
+[node name="RockShadow15" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(64, 104)
+scale = Vector2(0.742622, 0.742622)
+texture = ExtResource("5_xfn2u")
+
+[node name="RockShadow14" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(152, 82)
+scale = Vector2(0.742621, 0.742621)
+texture = ExtResource("4_uvej4")
+
+[node name="RockShadow20" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(13, 135)
+scale = Vector2(0.742621, 0.742621)
+texture = ExtResource("4_uvej4")
+
+[node name="BonesShadow318" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(211, 131)
+texture = ExtResource("7_clr7l")
+
+[node name="BonesShadow312" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(149, 122)
+scale = Vector2(0.671875, 0.671875)
+texture = ExtResource("8_m860o")
+
+[node name="BonesShadow311" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(195, 106)
+scale = Vector2(0.609375, 0.609375)
+texture = ExtResource("9_vcc34")
+
+[node name="BonesShadow37" type="Sprite2D" parent="2/Node2D"]
+position = Vector2(88, 121)
+scale = Vector2(0.703125, 0.703125)
+texture = ExtResource("10_dtrxi")
+
+[node name="3" type="Sprite2D" parent="2"]
+visible = false
+modulate = Color(0.31802, 0.31802, 0.31802, 1)
+texture = ExtResource("1_8fr12")
+metadata/_edit_lock_ = true
+
+[node name="分割线" type="Sprite2D" parent="2"]
+self_modulate = Color(0.699653, 0.699653, 0.699653, 1)
+position = Vector2(-3.05176e-05, -13.5)
+scale = Vector2(1, 0.03125)
+texture = ExtResource("6_1ll4o")
+flip_v = true
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="2"]
+offset_left = -288.0
+offset_top = -162.0
+offset_right = 288.0
+offset_bottom = -18.0
+color = Color(0.322457, 0.113973, 0.103607, 0.262745)
+metadata/_edit_lock_ = true
+
+[node name="晶石" type="Sprite2D" parent="2"]
+position = Vector2(146.25, -132.75)
+texture = ExtResource("11_0ygn5")
+flip_v = true
+
+[node name="CrystalShadow13" type="Sprite2D" parent="2/晶石"]
+position = Vector2(-85.5, -6.75)
+texture = ExtResource("12_p1252")
+flip_v = true
+
+[node name="CrystalShadow14" type="Sprite2D" parent="2/晶石"]
+position = Vector2(-177.75, -11.25)
+scale = Vector2(0.886719, 0.78125)
+texture = ExtResource("11_0ygn5")
+flip_h = true
+flip_v = true
+
+[node name="CrystalShadow13" type="Sprite2D" parent="2/晶石/CrystalShadow14"]
+position = Vector2(-85.5, -6.75)
+texture = ExtResource("12_p1252")
+flip_v = true
+
+[node name="CrystalShadow24" type="Sprite2D" parent="2/晶石"]
+position = Vector2(-290.25, -11.25)
+scale = Vector2(1.28516, 1.4102)
+texture = ExtResource("13_6hvtl")
+flip_h = true
+flip_v = true
+
+[node name="CrystalShadow33" type="Sprite2D" parent="2/晶石/CrystalShadow24"]
+position = Vector2(-99.7933, 3.19104)
+texture = ExtResource("14_ryql7")
+flip_v = true
+
+[node name="废墟背景" type="Sprite2D" parent="2"]
+visible = false
+position = Vector2(-265.5, -29.25)
+scale = Vector2(2.25, 2.25)
+texture = ExtResource("19_0rw2o")
+flip_h = true
+
+[node name="RuinShadow25" type="Sprite2D" parent="2/废墟背景"]
+position = Vector2(233, 3)
+scale = Vector2(1, 1)
+texture = ExtResource("19_0rw2o")
+
+[node name="祭台" type="Sprite2D" parent="2"]
+position = Vector2(-6.75001, -56.2501)
+scale = Vector2(1.85, 1.85)
+texture = ExtResource("17_xn0cr")
+hframes = 6
+vframes = 3
+region_enabled = true
+region_rect = Rect2(0, 0, 480, 336)
+
+[node name="RockShadow24" type="Sprite2D" parent="2"]
+position = Vector2(-218.25, 33.75)
+scale = Vector2(1.27344, 1.27344)
+texture = ExtResource("18_0140a")
+
+[node name="RockShadow19" type="Sprite2D" parent="2"]
+position = Vector2(-193.5, 51.7501)
+texture = ExtResource("19_sko2d")
+
+[node name="RockShadow12" type="Sprite2D" parent="2"]
+position = Vector2(-225, 78.7501)
+texture = ExtResource("20_okx3r")
+
+[node name="GroundRocks" type="Sprite2D" parent="."]
+position = Vector2(99.6111, 9.94442)
+scale = Vector2(0.584723, 0.628473)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+metadata/_edit_lock_ = true
+
+[node name="GroundRocks2" type="Sprite2D" parent="GroundRocks"]
+position = Vector2(28.5153, -2.6012)
+scale = Vector2(1, 0.831287)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks3" type="Sprite2D" parent="GroundRocks"]
+position = Vector2(105.75, -1.76685)
+scale = Vector2(1, 0.889569)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks4" type="Sprite2D" parent="GroundRocks/GroundRocks3"]
+position = Vector2(42.75, -2.86102e-06)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks5" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks4"]
+position = Vector2(47.25, 1.90735e-06)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks5" type="Sprite2D" parent="GroundRocks/GroundRocks3"]
+position = Vector2(139.5, 9.53674e-07)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks4" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5"]
+position = Vector2(42.75, -2.86102e-06)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks5" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4"]
+position = Vector2(51.75, 3.09944e-06)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks6" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4"]
+position = Vector2(51.75, 3.09944e-06)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks7" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4"]
+position = Vector2(47.25, 3.09944e-06)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks8" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4"]
+position = Vector2(-414, 2.86102e-06)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks4" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4/GroundRocks8"]
+position = Vector2(42.75, -2.86102e-06)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks5" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4/GroundRocks8/GroundRocks4"]
+position = Vector2(47.25, 1.90735e-06)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks7" type="Sprite2D" parent="GroundRocks"]
+position = Vector2(-184.5, 5.05447e-05)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks4" type="Sprite2D" parent="GroundRocks/GroundRocks7"]
+position = Vector2(42.75, -2.86102e-06)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks5" type="Sprite2D" parent="GroundRocks/GroundRocks7"]
+position = Vector2(90, -9.53674e-07)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks6" type="Sprite2D" parent="GroundRocks/GroundRocks7"]
+position = Vector2(-47.2499, 0)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks8" type="Sprite2D" parent="GroundRocks/GroundRocks7"]
+position = Vector2(255.42, 3.63187)
+scale = Vector2(1, 1.22086)
+texture = ExtResource("23_m071m")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_4gk2f")
+}
+autoplay = "idle"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bpd6b7b7bjgd6"]
+
+[ext_resource type="Script" path="res://relics/blinding_curse.gd" id="1_ewye4"]
+[ext_resource type="Texture2D" uid="uid://ccb1kep5itnyc" path="res://assert/relic/Icon33.png" id="1_jhgkb"]
+
+[resource]
+script = ExtResource("1_ewye4")
+relic_name = "诅咒缠身"
+id = "blinding_curse"
+type = 1
+character_type = 0
+starter_relic = false
+icon = ExtResource("1_jhgkb")
+tooltip = "[color=\"401951\"]诅咒缠身[/color]
+你看不见敌人的意图
+"

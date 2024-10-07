@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Relic" load_steps=3 format=3 uid="uid://dpclmpqcqxbpv"]
+
+[ext_resource type="Texture2D" uid="uid://dgjrmkthledwv" path="res://assert/relic/Icon24.png" id="1_1cp3q"]
+[ext_resource type="Script" path="res://custom_resources/relic.gd" id="1_mpel5"]
+
+[resource]
+script = ExtResource("1_mpel5")
+relic_name = "力量之手"
+id = "strength_up"
+type = 1
+character_type = 0
+starter_relic = false
+icon = ExtResource("1_1cp3q")
+tooltip = ""

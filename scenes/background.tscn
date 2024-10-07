@@ -1,0 +1,319 @@
+[gd_scene load_steps=24 format=3 uid="uid://omsmj0qnwmbq"]
+
+[ext_resource type="Texture2D" uid="uid://buv7f17ub0yub" path="res://assert/background/Clouds 6/1.png" id="1_lnco5"]
+[ext_resource type="Texture2D" uid="uid://dmxseg36lf06w" path="res://assert/background/Clouds 6/3.png" id="2_yk7qc"]
+[ext_resource type="Texture2D" uid="uid://d3o1v17v4mcv7" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow1_1.png" id="11_488p5"]
+[ext_resource type="Texture2D" uid="uid://d1nu74rm13snn" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Ground_rocks.png" id="11_d4mfp"]
+[ext_resource type="Texture2D" uid="uid://rymxmu47o5aj" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Crystal_shadow1_2.png" id="12_3h103"]
+[ext_resource type="Texture2D" uid="uid://dnv5ggfhkm2kc" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/water_detilazation.png" id="12_3k210"]
+[ext_resource type="Texture2D" uid="uid://c1t4w42uujvny" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Rock_shadow1_4.png" id="12_wlai7"]
+[ext_resource type="Texture2D" uid="uid://cbsqb0r3w0s5e" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Rock_shadow1_3.png" id="13_g1t3v"]
+[ext_resource type="Texture2D" uid="uid://banwouua0yrv4" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Crystal_shadow1_3.png" id="13_vuojn"]
+[ext_resource type="Texture2D" uid="uid://mwlipp6bkg7w" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Crystal_shadow2_4.png" id="14_f316e"]
+[ext_resource type="Texture2D" uid="uid://itxyalsy62e1" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Grave_shadow1_7.png" id="15_eq3kg"]
+[ext_resource type="Texture2D" uid="uid://iq1uf330qyc0" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow1_2.png" id="15_lh4ii"]
+[ext_resource type="Texture2D" uid="uid://dd8wvgy7uqxpg" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Crystal_shadow3_3.png" id="15_tka14"]
+[ext_resource type="Texture2D" uid="uid://dr2r7d1dw33ra" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Grave_shadow1_6.png" id="16_gdk2x"]
+[ext_resource type="Texture2D" uid="uid://waoilj5p5wns" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow1_4.png" id="16_j8jix"]
+[ext_resource type="Texture2D" uid="uid://c5dvguyciik5y" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Grave_shadow1_5.png" id="17_tcr8f"]
+[ext_resource type="Texture2D" uid="uid://dwbvvrsjsv6sb" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow1_15.png" id="17_w1iag"]
+[ext_resource type="Texture2D" uid="uid://dw2ays07cf1pc" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow2_17.png" id="18_e1j4n"]
+[ext_resource type="Texture2D" uid="uid://b4yootrjryumb" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Ruin_shadow3_2.png" id="18_o3l8o"]
+[ext_resource type="Texture2D" uid="uid://bksxgl0qr4fjm" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Ruin_shadow2_4.png" id="19_jqppd"]
+[ext_resource type="Texture2D" uid="uid://cy2kuv1uy57oc" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Grave_shadow1_3.png" id="20_xj0uf"]
+[ext_resource type="Texture2D" uid="uid://day5a5hijxulj" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Grave_shadow1_4.png" id="21_spc0u"]
+[ext_resource type="Texture2D" uid="uid://bjaxuxmtbfonu" path="res://assert/background/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Grave_shadow1_2.png" id="22_itbry"]
+
+[node name="background" type="Node2D"]
+
+[node name="2" type="Sprite2D" parent="."]
+modulate = Color(0.33299, 0.441931, 0.385583, 1)
+position = Vector2(128, 72)
+scale = Vector2(0.444444, 0.444444)
+texture = ExtResource("1_lnco5")
+metadata/_edit_lock_ = true
+
+[node name="WaterDetilazation" type="Sprite2D" parent="2"]
+self_modulate = Color(0.966608, 0.574058, 0.863815, 1)
+position = Vector2(-202.5, 49.5)
+scale = Vector2(0.901786, 1.58594)
+texture = ExtResource("12_3k210")
+region_enabled = true
+region_rect = Rect2(0, 0, 224, 32)
+
+[node name="WaterDetilazation2" type="Sprite2D" parent="2/WaterDetilazation"]
+self_modulate = Color(0.966608, 0.574058, 0.863815, 1)
+position = Vector2(219.564, 19.8621)
+scale = Vector2(1.10891, 1.37931)
+texture = ExtResource("12_3k210")
+region_enabled = true
+region_rect = Rect2(288, 198, 192, 33)
+
+[node name="WaterDetilazation3" type="Sprite2D" parent="2/WaterDetilazation/WaterDetilazation2"]
+self_modulate = Color(0.966608, 0.574058, 0.863815, 1)
+position = Vector2(173.25, -6.17142)
+texture = ExtResource("12_3k210")
+region_enabled = true
+region_rect = Rect2(0, 0, 224, 32)
+metadata/_edit_lock_ = true
+
+[node name="BonesShadow11" type="Sprite2D" parent="2"]
+position = Vector2(-217.984, 107.734)
+scale = Vector2(1.6709, 1.6709)
+texture = ExtResource("11_488p5")
+
+[node name="RockShadow14" type="Sprite2D" parent="2/BonesShadow11"]
+position = Vector2(-39.592, 22.9889)
+texture = ExtResource("12_wlai7")
+
+[node name="RockShadow13" type="Sprite2D" parent="2/BonesShadow11/RockShadow14"]
+position = Vector2(30.6519, -7.66297)
+texture = ExtResource("13_g1t3v")
+
+[node name="3" type="Sprite2D" parent="2"]
+visible = false
+modulate = Color(0.31802, 0.31802, 0.31802, 1)
+texture = ExtResource("1_lnco5")
+metadata/_edit_lock_ = true
+
+[node name="分割线" type="Sprite2D" parent="2"]
+self_modulate = Color(0.699653, 0.699653, 0.699653, 1)
+position = Vector2(-3.05176e-05, -13.5)
+scale = Vector2(1, 0.03125)
+texture = ExtResource("2_yk7qc")
+flip_v = true
+
+[node name="ColorRect" type="ColorRect" parent="2"]
+offset_left = -288.0
+offset_top = -162.0
+offset_right = 288.0
+offset_bottom = -18.0
+color = Color(0.322457, 0.113973, 0.103607, 0.262745)
+
+[node name="BonesShadow12" type="Sprite2D" parent="2"]
+position = Vector2(239, 123.25)
+scale = Vector2(1.0625, 1.0625)
+texture = ExtResource("15_lh4ii")
+
+[node name="BonesShadow217" type="Sprite2D" parent="2/BonesShadow12"]
+position = Vector2(18.0001, 15.75)
+texture = ExtResource("18_e1j4n")
+
+[node name="BonesShadow14" type="Sprite2D" parent="2"]
+position = Vector2(-265.5, 58.5)
+scale = Vector2(1.62109, 1.58594)
+texture = ExtResource("16_j8jix")
+
+[node name="BonesShadow115" type="Sprite2D" parent="2"]
+position = Vector2(-172.25, 98)
+scale = Vector2(1.48438, 1.48438)
+texture = ExtResource("17_w1iag")
+
+[node name="CrystalShadow12" type="Sprite2D" parent="2"]
+position = Vector2(146.25, -132.75)
+texture = ExtResource("12_3h103")
+flip_v = true
+
+[node name="CrystalShadow13" type="Sprite2D" parent="2/CrystalShadow12"]
+position = Vector2(-85.5, -6.75)
+texture = ExtResource("13_vuojn")
+flip_v = true
+
+[node name="CrystalShadow14" type="Sprite2D" parent="2/CrystalShadow12"]
+position = Vector2(-177.75, -11.25)
+scale = Vector2(0.886719, 0.78125)
+texture = ExtResource("12_3h103")
+flip_h = true
+flip_v = true
+
+[node name="CrystalShadow13" type="Sprite2D" parent="2/CrystalShadow12/CrystalShadow14"]
+position = Vector2(-85.5, -6.75)
+texture = ExtResource("13_vuojn")
+flip_v = true
+
+[node name="CrystalShadow24" type="Sprite2D" parent="2/CrystalShadow12"]
+position = Vector2(-290.25, -11.25)
+scale = Vector2(1.28516, 1.4102)
+texture = ExtResource("14_f316e")
+flip_h = true
+flip_v = true
+
+[node name="CrystalShadow33" type="Sprite2D" parent="2/CrystalShadow12/CrystalShadow24"]
+position = Vector2(-99.7933, 3.19104)
+texture = ExtResource("15_tka14")
+flip_v = true
+
+[node name="GraveShadow17" type="Sprite2D" parent="2"]
+position = Vector2(204.625, 105.875)
+scale = Vector2(1.69531, 1.69531)
+texture = ExtResource("15_eq3kg")
+
+[node name="GraveShadow16" type="Sprite2D" parent="2/GraveShadow17"]
+position = Vector2(-29.25, 15.75)
+texture = ExtResource("16_gdk2x")
+
+[node name="GraveShadow15" type="Sprite2D" parent="2/GraveShadow17"]
+position = Vector2(6.75, 22.5)
+texture = ExtResource("17_tcr8f")
+
+[node name="RuinShadow32" type="Sprite2D" parent="2"]
+visible = false
+position = Vector2(-4.50003, -45)
+scale = Vector2(2.74219, 2.74219)
+texture = ExtResource("18_o3l8o")
+
+[node name="RuinShadow24" type="Sprite2D" parent="2"]
+position = Vector2(-265.5, -29.25)
+scale = Vector2(2.25, 2.25)
+texture = ExtResource("19_jqppd")
+flip_h = true
+
+[node name="RuinShadow25" type="Sprite2D" parent="2"]
+position = Vector2(258.75, -22.5)
+scale = Vector2(2.25, 2.25)
+texture = ExtResource("19_jqppd")
+
+[node name="GraveShadow13" type="Sprite2D" parent="2"]
+position = Vector2(51.75, 110.25)
+scale = Vector2(1.49414, 1.61529)
+texture = ExtResource("20_xj0uf")
+
+[node name="GraveShadow14" type="Sprite2D" parent="2/GraveShadow13"]
+position = Vector2(-53.8378, -11.2865)
+scale = Vector2(1.09459, 1.09459)
+texture = ExtResource("21_spc0u")
+
+[node name="GraveShadow12" type="Sprite2D" parent="2/GraveShadow13/GraveShadow14"]
+position = Vector2(-45.38, 9.60003)
+texture = ExtResource("22_itbry")
+
+[node name="GroundRocks" type="Sprite2D" parent="."]
+position = Vector2(99.6111, 9.94442)
+scale = Vector2(0.584723, 0.628473)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+metadata/_edit_lock_ = true
+
+[node name="GroundRocks2" type="Sprite2D" parent="GroundRocks"]
+position = Vector2(28.5153, -2.6012)
+scale = Vector2(1, 0.831287)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks3" type="Sprite2D" parent="GroundRocks"]
+position = Vector2(105.75, -1.76685)
+scale = Vector2(1, 0.889569)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks4" type="Sprite2D" parent="GroundRocks/GroundRocks3"]
+position = Vector2(42.75, -2.86102e-06)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks5" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks4"]
+position = Vector2(47.25, 1.90735e-06)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks5" type="Sprite2D" parent="GroundRocks/GroundRocks3"]
+position = Vector2(139.5, 9.53674e-07)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks4" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5"]
+position = Vector2(42.75, -2.86102e-06)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks5" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4"]
+position = Vector2(51.75, 3.09944e-06)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks6" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4"]
+position = Vector2(51.75, 3.09944e-06)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks7" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4"]
+position = Vector2(47.25, 3.09944e-06)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks8" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4"]
+position = Vector2(-414, 2.86102e-06)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks4" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4/GroundRocks8"]
+position = Vector2(42.75, -2.86102e-06)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks5" type="Sprite2D" parent="GroundRocks/GroundRocks3/GroundRocks5/GroundRocks4/GroundRocks8/GroundRocks4"]
+position = Vector2(47.25, 1.90735e-06)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks7" type="Sprite2D" parent="GroundRocks"]
+position = Vector2(-184.5, 5.05447e-05)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks4" type="Sprite2D" parent="GroundRocks/GroundRocks7"]
+position = Vector2(42.75, -2.86102e-06)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks5" type="Sprite2D" parent="GroundRocks/GroundRocks7"]
+position = Vector2(90, -9.53674e-07)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks6" type="Sprite2D" parent="GroundRocks/GroundRocks7"]
+position = Vector2(-47.2499, 0)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true
+
+[node name="GroundRocks8" type="Sprite2D" parent="GroundRocks/GroundRocks7"]
+position = Vector2(255.42, 3.63187)
+scale = Vector2(1, 1.22086)
+texture = ExtResource("11_d4mfp")
+region_enabled = true
+region_rect = Rect2(160, 496, 80, 32)
+region_filter_clip_enabled = true

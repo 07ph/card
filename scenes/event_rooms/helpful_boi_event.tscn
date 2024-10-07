@@ -1,0 +1,156 @@
+[gd_scene load_steps=29 format=3 uid="uid://qd2lt374xj2l"]
+
+[ext_resource type="Script" path="res://scenes/event_rooms/helpful_boi_event.gd" id="1_7infd"]
+[ext_resource type="PackedScene" uid="uid://br2rpgkb7gbxr" path="res://scenes/event_rooms/event_room_button.tscn" id="1_850a0"]
+[ext_resource type="Resource" uid="uid://sbkc4o401k4l" path="res://characters/warrior/warrior.tres" id="2_f8c4o"]
+[ext_resource type="Texture2D" uid="uid://brptoixg36ioc" path="res://assert/helper/swap (28).png" id="4_fwbgh"]
+[ext_resource type="Texture2D" uid="uid://ca15mh67smvoi" path="res://assert/helper/swap (29).png" id="5_q1rpg"]
+[ext_resource type="Texture2D" uid="uid://bniiut0wjyuq2" path="res://assert/helper/swap (38).png" id="6_0awwl"]
+[ext_resource type="Texture2D" uid="uid://cctl4d0m0odxp" path="res://assert/helper/swap (39).png" id="7_wxsru"]
+[ext_resource type="Texture2D" uid="uid://r3w71cla2xqr" path="res://assert/helper/swap (40).png" id="8_eppsb"]
+[ext_resource type="Texture2D" uid="uid://17w4y5fcvbpy" path="res://assert/helper/swap (41).png" id="9_prlue"]
+[ext_resource type="Texture2D" uid="uid://c0gm0ufv04ba3" path="res://assert/helper/swap (42).png" id="10_mvfm4"]
+[ext_resource type="Texture2D" uid="uid://c4lj23qn020vo" path="res://assert/helper/swap (43).png" id="11_bwv5g"]
+[ext_resource type="Texture2D" uid="uid://bwerjasavq3da" path="res://assert/helper/swap (44).png" id="12_63ahu"]
+[ext_resource type="Texture2D" uid="uid://b8jxep72tnwif" path="res://assert/helper/swap (30).png" id="12_p1vlb"]
+[ext_resource type="Texture2D" uid="uid://d0llar2ryo7vt" path="res://assert/helper/swap (45).png" id="13_bw3w7"]
+[ext_resource type="Texture2D" uid="uid://bly7m7swsef66" path="res://assert/helper/swap (31).png" id="13_si1qo"]
+[ext_resource type="Texture2D" uid="uid://c1wd3q3sd6x57" path="res://assert/helper/swap (32).png" id="14_cw72d"]
+[ext_resource type="Texture2D" uid="uid://cjyx2ywq0504i" path="res://assert/helper/swap (46).png" id="14_fypn5"]
+[ext_resource type="Texture2D" uid="uid://de0uhw64xsdjg" path="res://assert/helper/swap (33).png" id="15_8tc2q"]
+[ext_resource type="Texture2D" uid="uid://bxpnphyfjxfqf" path="res://assert/helper/swap (34).png" id="16_rqlf4"]
+[ext_resource type="Texture2D" uid="uid://bhahsi7s2atg6" path="res://assert/helper/swap (47).png" id="16_t65y1"]
+[ext_resource type="Texture2D" uid="uid://gnvub4hgfgkp" path="res://assert/helper/swap (35).png" id="17_rqwtm"]
+[ext_resource type="Texture2D" uid="uid://bg06ll3h2gk8e" path="res://assert/helper/swap (48).png" id="17_uk5x2"]
+[ext_resource type="Texture2D" uid="uid://bv2e8o60mxil7" path="res://assert/helper/swap (49).png" id="18_1fyn2"]
+[ext_resource type="Texture2D" uid="uid://dh6bfnqiwnax2" path="res://assert/helper/swap (36).png" id="18_k4wb3"]
+[ext_resource type="Texture2D" uid="uid://bpyyyjf1srark" path="res://assert/helper/swap (37).png" id="19_u4jgy"]
+
+[sub_resource type="Gradient" id="Gradient_viwyc"]
+colors = PackedColorArray(0.112362, 0.194285, 0.187789, 1, 0.191165, 0.159225, 0.131074, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_f4sem"]
+gradient = SubResource("Gradient_viwyc")
+width = 50
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_kg8ti"]
+frames = 22
+speed_scale = 6.0
+frame_0/texture = ExtResource("4_fwbgh")
+frame_1/texture = ExtResource("5_q1rpg")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("12_p1vlb")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("13_si1qo")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("14_cw72d")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("15_8tc2q")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("16_rqlf4")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("17_rqwtm")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("18_k4wb3")
+frame_8/duration = 1.0
+frame_9/texture = ExtResource("19_u4jgy")
+frame_9/duration = 1.0
+frame_10/texture = ExtResource("6_0awwl")
+frame_10/duration = 1.0
+frame_11/texture = ExtResource("7_wxsru")
+frame_11/duration = 1.0
+frame_12/texture = ExtResource("8_eppsb")
+frame_12/duration = 1.0
+frame_13/texture = ExtResource("9_prlue")
+frame_13/duration = 1.0
+frame_14/texture = ExtResource("10_mvfm4")
+frame_14/duration = 1.0
+frame_15/texture = ExtResource("11_bwv5g")
+frame_15/duration = 1.0
+frame_16/texture = ExtResource("12_63ahu")
+frame_16/duration = 1.0
+frame_17/texture = ExtResource("13_bw3w7")
+frame_17/duration = 1.0
+frame_18/texture = ExtResource("14_fypn5")
+frame_18/duration = 1.0
+frame_19/texture = ExtResource("16_t65y1")
+frame_19/duration = 1.0
+frame_20/texture = ExtResource("17_uk5x2")
+frame_20/duration = 1.0
+frame_21/texture = ExtResource("18_1fyn2")
+frame_21/duration = 1.0
+
+[node name="HelpfulBoiEvent" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7infd")
+character_stats = ExtResource("2_f8c4o")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.203922, 0.227451, 0.219608, 1)
+
+[node name="Background" type="TextureRect" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_f4sem")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -17.0
+offset_right = 174.0
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_kg8ti")
+flip_h = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.0
+offset_top = -31.0
+offset_right = -2.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "你好..."
+horizontal_alignment = 1
+
+[node name="DuplicateLastCardButton" parent="VBoxContainer" instance=ExtResource("1_850a0")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+text = "复制你最近拿到的一张卡牌进入你的牌库"
+
+[node name="PlusMaxHPButton" parent="VBoxContainer" instance=ExtResource("1_850a0")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+text = "+5 最大HP"

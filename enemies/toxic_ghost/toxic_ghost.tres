@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EnemyStats" load_steps=8 format=3 uid="uid://crmyty52i10xd"]
+
+[ext_resource type="PackedScene" uid="uid://c4kjdbymx7u0a" path="res://enemies/toxic_ghost/toxic_ghost_ai.tscn" id="1_3lheq"]
+[ext_resource type="Script" path="res://custom_resources/enemy_stats.gd" id="1_dyv27"]
+[ext_resource type="Texture2D" uid="uid://dj1fchpb6gf8q" path="res://assert/slime/Slime_Spiked_Idle_0.png" id="2_p4obx"]
+[ext_resource type="Texture2D" uid="uid://bh7r04lnwjb60" path="res://assert/slime/Slime_Spiked_Idle_1.png" id="3_m5d4k"]
+[ext_resource type="Texture2D" uid="uid://dmvgj8wa8el3g" path="res://assert/slime/Slime_Spiked_Idle_2.png" id="4_ep6qm"]
+[ext_resource type="Texture2D" uid="uid://dk1o2kbypjulm" path="res://assert/slime/Slime_Spiked_Idle_3.png" id="5_id24h"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_pfwgj"]
+frames = 4
+speed_scale = 6.0
+frame_0/texture = ExtResource("2_p4obx")
+frame_1/texture = ExtResource("3_m5d4k")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4_ep6qm")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("5_id24h")
+frame_3/duration = 1.0
+
+[resource]
+script = ExtResource("1_dyv27")
+ai = ExtResource("1_3lheq")
+max_health = 40
+art = SubResource("AnimatedTexture_pfwgj")
