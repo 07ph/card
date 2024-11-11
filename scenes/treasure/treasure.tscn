@@ -11,101 +11,15 @@
 [ext_resource type="Resource" uid="uid://bkmq76jcysxaf" path="res://relics/blinding_potion.tres" id="5_5havh"]
 [ext_resource type="Texture2D" uid="uid://isan6btj7dwy" path="res://art/tile_0091.png" id="5_h2q1b"]
 [ext_resource type="Resource" uid="uid://b7xh51rkdccfy" path="res://relics/confusing_staff.tres" id="6_fkuuo"]
-[ext_resource type="Resource" uid="uid://r6aixmaucd4b" path="res://relics/wooden_sword.tres" id="7_oqlxp"]
 [ext_resource type="PackedScene" uid="uid://omsmj0qnwmbq" path="res://scenes/background.tscn" id="9_y60lc"]
+[ext_resource type="Resource" uid="uid://dpclmpqcqxbpv" path="res://relics/strength_up.tres" id="13_r2qfq"]
 [ext_resource type="Texture2D" uid="uid://dwwohw571cr2a" path="res://art/tile_0092.png" id="14_qrjaj"]
 [ext_resource type="Texture2D" uid="uid://cgopx2ponr1qi" path="res://art/tile_0121.png" id="15_7h03u"]
 [ext_resource type="Resource" uid="uid://bpd6b7b7bjgd6" path="res://relics/blinding_curse.tres" id="16_l3fj7"]
+[ext_resource type="Resource" uid="uid://5k82x8u014sh" path="res://relics/healing_small.tres" id="17_co713"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8a2h2"]
 font_size = 12
-
-[sub_resource type="Animation" id="Animation_uiaoo"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:texture")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("3_4v1q1")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("GPUParticles2D:emitting")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("GPUParticles2D:texture")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("4_3wkp5")]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("GPUParticles2D:amount")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [25]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("..:relic_handler")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [null]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("..:treasure_relic_pool")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [Array[ExtResource("2_ad0d4")]([ExtResource("2_g8620"), ExtResource("3_b2sgi"), ExtResource("4_xb65p"), ExtResource("5_5havh"), ExtResource("6_fkuuo"), ExtResource("7_oqlxp")])]
-}
 
 [sub_resource type="Animation" id="Animation_lskdl"]
 resource_name = "bad"
@@ -168,7 +82,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [Array[ExtResource("2_ad0d4")]([ExtResource("16_l3fj7")])]
+"values": [Array[ExtResource("2_ad0d4")]([ExtResource("16_l3fj7"), ExtResource("16_l3fj7"), ExtResource("16_l3fj7")])]
 }
 tracks/5/type = "method"
 tracks/5/imported = false
@@ -177,9 +91,12 @@ tracks/5/path = NodePath("..")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(2),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0.933333, 2),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
+"args": [],
+"method": &"generate_relic"
+}, {
 "args": [],
 "method": &"_on_treasure_opened"
 }]
@@ -230,43 +147,46 @@ tracks/1/keys = {
 "update": 1,
 "values": [true]
 }
-tracks/2/type = "method"
+tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("..")
+tracks/2/path = NodePath("GPUParticles2D:texture")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(2),
+"times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"_on_treasure_opened"
-}]
+"update": 1,
+"values": [ExtResource("4_3wkp5")]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("GPUParticles2D:texture")
+tracks/3/path = NodePath("GPUParticles2D:amount")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("4_3wkp5")]
+"values": [25]
 }
-tracks/4/type = "value"
+tracks/4/type = "method"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("GPUParticles2D:amount")
+tracks/4/path = NodePath("..")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [25]
+"times": PackedFloat32Array(0.9, 2),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"generate_relic"
+}, {
+"args": [],
+"method": &"_on_treasure_opened"
+}]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -278,24 +198,11 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [Array[ExtResource("2_ad0d4")]([ExtResource("2_g8620"), ExtResource("3_b2sgi"), ExtResource("4_xb65p"), ExtResource("5_5havh"), ExtResource("6_fkuuo"), ExtResource("7_oqlxp")])]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("..:relic_handler")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [null]
+"values": [Array[ExtResource("2_ad0d4")]([ExtResource("3_b2sgi"), ExtResource("4_xb65p"), ExtResource("13_r2qfq"), ExtResource("5_5havh"), ExtResource("6_fkuuo"), ExtResource("2_g8620"), ExtResource("17_co713")])]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_w7tb8"]
 _data = {
-"RESET": SubResource("Animation_uiaoo"),
 "bad": SubResource("Animation_lskdl"),
 "highlight": SubResource("Animation_iws3o"),
 "open": SubResource("Animation_8kvkc")
@@ -333,7 +240,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_0dgmn")
-treasure_relic_pool = Array[ExtResource("2_ad0d4")]([ExtResource("2_g8620"), ExtResource("3_b2sgi"), ExtResource("4_xb65p"), ExtResource("5_5havh"), ExtResource("6_fkuuo"), ExtResource("7_oqlxp")])
+treasure_relic_pool = Array[ExtResource("2_ad0d4")]([ExtResource("16_l3fj7")])
 
 [node name="background" parent="." instance=ExtResource("9_y60lc")]
 
@@ -392,9 +299,9 @@ autoplay = "highlight"
 [node name="GPUParticles2D" type="GPUParticles2D" parent="TreasureChest"]
 position = Vector2(20, 28)
 emitting = false
-amount = 25
+amount = 6
 process_material = SubResource("ParticleProcessMaterial_7ywtv")
-texture = ExtResource("4_3wkp5")
+texture = ExtResource("15_7h03u")
 lifetime = 1.5
 one_shot = true
 explosiveness = 1.0

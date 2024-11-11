@@ -1,10 +1,10 @@
 class_name Treasure
 extends Control
 
-
 @export var relic_handler: RelicHandler
 @export var char_stats: CharacterStats
 @export var treasure_relic_pool: Array[Relic]
+
 @onready var animation_player: AnimationPlayer = %AnimationPlayer
 var found_relic: Relic
 
@@ -37,7 +37,7 @@ func _on_treasure_chest_gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("left_mouse"):
 		if RNG.instance.randf() < 0.5:	
 			animation_player.play("bad")
-			generate_relic()
 		else:
 			animation_player.play("open")
+		
 			

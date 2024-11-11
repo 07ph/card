@@ -1,5 +1,3 @@
-# meta-name: Relic
-# meta-description: Create a Relic which can be acquired by the player.
 extends Relic
 
 var member_var := 0
@@ -18,6 +16,6 @@ func deactivate_relic(_owner: RelicUI) -> void:
 	print("Event-based Relics should disconnect from the EventBus here.")
 
 
-# we can provide unique tooltips per relic if we want to
+#我们可以为每个遗物提供独特的工具提示
 func get_tooltip() -> String:
 	return tooltip

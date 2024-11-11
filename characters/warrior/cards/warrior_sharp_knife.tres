@@ -6,12 +6,13 @@
 
 [resource]
 script = ExtResource("2_rjcfh")
-id = "sharp_knife"
+id = "复仇之刃"
 type = 0
 rarity = 2
 target = 1
-cost = 1
+cost = 0
 exhausts = false
 icon = ExtResource("1_p0xvk")
-tooltip_text = "[center]造成 [color=\"ff0000\"]%s[/color] 伤害.  这场战斗这张卡的伤害+%s .[/center]"
+tooltip_text = "[center][color=\"ffdf00\"]【复仇之刃】[/color] [/center]
+[center]造成 [color=\"ff0000\"]%s[/color] 伤害.  这场战斗这张卡的伤害+%s .[/center]"
 sound = ExtResource("3_uxg0o")

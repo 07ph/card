@@ -30,5 +30,5 @@ frame_6/duration = 1.0
 [resource]
 script = ExtResource("1_1akn0")
 ai = ExtResource("1_oeu8d")
-max_health = 8
+max_health = 10
 art = SubResource("AnimatedTexture_ofe4n")

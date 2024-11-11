@@ -10,7 +10,7 @@ relic_name = "无尽血瓶"
 id = "healing_potion"
 type = 3
 character_type = 2
-starter_relic = true
+starter_relic = false
 icon = ExtResource("1_xg7m0")
 tooltip = "[color=\"ffdf00\"]无尽血瓶[/color]
 在一场战斗后，回复6点血量"

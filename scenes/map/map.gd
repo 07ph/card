@@ -121,3 +121,8 @@ func _on_map_room_selected(room: Room) -> void:
 	last_room = room
 	floors_climbed += 1
 	Events.map_exited.emit(room)
+	
+
+func unlock_all_rooms() -> void:
+	for map_room: MapRoom in rooms.get_children():
+		map_room.available = true

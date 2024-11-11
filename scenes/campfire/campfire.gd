@@ -13,7 +13,7 @@ func _on_rest_button_pressed() -> void:
 	animation_player.play("fade_out")
 
 
-# This is called from the AnimationPlayer
-# at the end of 'fade-out'.
+#这是从AnimationPlayer调用的
+#在'fade-out'的末尾。
 func _on_fade_out_finished() -> void:
 	Events.campfire_exited.emit()

@@ -6,12 +6,13 @@
 
 [resource]
 script = ExtResource("2_hh2ps")
-id = "warrior_big_slam"
+id = "痛击"
 type = 0
 rarity = 1
 target = 1
 cost = 2
 exhausts = true
 icon = ExtResource("1_11nym")
-tooltip_text = "[center]造成 [color=\"ff0000\"]%s[/color] 点伤害并施加2层 [color=\"ffdf00\"]易伤[/color].[/center]"
+tooltip_text = "[center][color=\"2a5caa\"]【痛击】[/color] [/center]
+[center]造成 [color=\"ff0000\"]%s[/color] 点伤害并施加2层 [color=\"ffdf00\"]易伤[/color].[/center]"
 sound = ExtResource("3_0l7j0")

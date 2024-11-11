@@ -21,7 +21,7 @@ func activate_relic(_owner: RelicUI) -> void:
 	pass
 
 
-# This method should be implemented by event-based relics
+# 这个函数一般应用于事件驱动的遗物
 # which connect to the EventBus to make sure that they are
 # disconnected when a relic gets removed.
 func deactivate_relic(_owner: RelicUI) -> void:

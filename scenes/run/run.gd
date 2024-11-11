@@ -5,11 +5,11 @@ const BATTLE_SCENE := preload("res://scenes/battle/battle.tscn")
 const BATTLE_REWARD_SCENE := preload("res://scenes/battle_reward/battle_reward.tscn")
 const CAMPFIRE_SCENE := preload("res://scenes/campfire/campfire.tscn")
 const SHOP_SCENE := preload("res://scenes/shop/shop.tscn")
-const TREASURE_SCENE = preload("res://scenes/treasure/treasure.tscn")
+const TREASURE_SCENE := preload("res://scenes/treasure/treasure.tscn")
 const WIN_SCREEN_SCENE := preload("res://scenes/win_screen/win_screen.tscn")
 const MAIN_MENU_PATH := "res://scenes/ui/main_menu.tscn"
 
-@export var run_startup: RunStartup
+@export var run_startup: RunStartup 
 
 @onready var map: Map = $Map
 @onready var current_view: Node = $CurrentView
@@ -34,20 +34,24 @@ var save_data: SaveGame
 
 
 func _ready() -> void:
+	#如果不是开始运行
 	if not run_startup:
 		return
 	
+	#是开始运行，连接到存档
 	pause_menu.save_and_quit.connect(
 		func(): 
 			get_tree().change_scene_to_file(MAIN_MENU_PATH)
 	)
 	
+	
 	match run_startup.type:
-		RunStartup.Type.NEW_RUN:
-			character = run_startup.picked_character.create_instance()
-			_start_run()
+		RunStartup.Type.NEW_RUN:		#如果开始运行状态是重新开始
+			character = run_startup.picked_character.create_instance()		#初始化角色
+			_start_run()		#开始存档
+			
 		RunStartup.Type.CONTINUED_RUN:
-			_load_run()
+			_load_run()			#加载存档
 
 
 func _start_run() -> void:
@@ -77,7 +81,7 @@ func _save_run(was_on_map: bool) -> void:
 	save_data.was_on_map = was_on_map
 	save_data.save_data()
 
-
+#加载存档
 func _load_run() -> void:
 	save_data = SaveGame.load_data()
 	assert(save_data, "无法加载最近的存档")
@@ -95,13 +99,13 @@ func _load_run() -> void:
 	if save_data.last_room and not save_data.was_on_map:
 		_on_map_exited(save_data.last_room)
 
-
+#
 func _change_view(scene: PackedScene) -> Node:
 	if current_view.get_child_count() > 0:
 		current_view.get_child(0).queue_free()
 	
 	get_tree().paused = false
-	var new_view := scene.instantiate()
+	var new_view := scene.instantiate()			#加载存档
 	current_view.add_child(new_view)
 	map.hide_map()
 	

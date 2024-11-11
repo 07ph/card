@@ -1,24 +1,23 @@
 extends Relic
 
-var already_initialized := false
+signal status_applied(status: Status)
 
-
-func initialize_relic(owner: RelicUI) -> void:
-	# makes sure we don't have extra mana when we
-	# keep saving and loading the game
-	if already_initialized:
-		return
-
-	var run := owner.get_tree().get_first_node_in_group("run") as Run
-	run.character.max_mana += 1
-	run.character.mana = run.character.max_mana
-	already_initialized = true
+const MUSCLE_STATUS = preload("res://statuses/muscle.tres")
+ 
 
 
 func activate_relic(owner: RelicUI) -> void:
-	owner.get_tree().call_group("intent", "set", "modulate", Color.TRANSPARENT)
+	Events.player_hand_drawn.connect(_add_strength.bind(owner), CONNECT_ONE_SHOT)
 
 
-func deactivate_relic(owner: RelicUI) -> void:
-	var run := owner.get_tree().get_first_node_in_group("run") as Run
-	run.character.max_mana -= 1
+func _add_strength(owner: RelicUI) -> void:
+	print("applied true str form")
+	var target=owner.get_tree().get_first_node_in_group("player") as Player
+	var status_effect := StatusEffect.new()
+	var muscle := MUSCLE_STATUS.duplicate()
+	muscle.stacks = 1
+	status_effect.status = muscle
+	status_effect.execute([target])
+	
+	status_applied.emit(self)
+	owner.flash()

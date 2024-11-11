@@ -4,8 +4,8 @@
 
 [resource]
 script = ExtResource("1_wjw4p")
-gold = 50
-card_rewards = 4
+gold = 70
+card_rewards = 3
 common_weight = 6.0
 uncommon_weight = 3.7
 rare_weight = 0.3

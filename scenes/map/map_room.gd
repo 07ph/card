@@ -10,8 +10,8 @@ const ICONS := {
 	Room.Type.TREASURE: [preload("res://art/tile_0089.png"), Vector2.ONE],
 	Room.Type.CAMPFIRE: [preload("res://art/player_heart.png"), Vector2(0.6, 0.6)],
 	Room.Type.SHOP: [preload("res://art/gold.png"), Vector2(0.6, 0.6)],
-	Room.Type.BOSS: [preload("res://art/tile_0105.png"), Vector2(1.25, 1.25)],
-	Room.Type.EVENT: [preload("res://art/rarity.png"), Vector2(0.9, 0.9)],
+	Room.Type.BOSS: [preload("res://assert/Slime_Spiked_Idle_2.png"), Vector2(2.5, 2.5)],
+	Room.Type.EVENT: [preload("res://assert/quotation6.png"), Vector2(0.9, 0.9)],
 }
 
 @onready var sprite_2d: Sprite2D = $Visuals/Sprite2D

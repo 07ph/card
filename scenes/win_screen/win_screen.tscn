@@ -3,8 +3,7 @@
 [ext_resource type="Script" path="res://scenes/win_screen/win_screen.gd" id="1_n40vj"]
 
 [sub_resource type="Gradient" id="Gradient_7af3e"]
-offsets = PackedFloat32Array(0, 0.2, 0.9, 1)
-colors = PackedColorArray(0.816212, 0.573312, 0.384204, 1, 0.434406, 0.578687, 0.564901, 1, 0.869117, 0.595672, 0.774732, 1, 0.999997, 0.533102, 0.593986, 1)
+colors = PackedColorArray(0.471682, 5.77569e-07, 0.156632, 1, 0.737697, 0.493427, 0.503889, 1)
 metadata/_snap_enabled = true
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_1kxac"]

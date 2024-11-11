@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CardPile" load_steps=9 format=3 uid="uid://cno2mmhf4bjci"]
+[gd_resource type="Resource" script_class="CardPile" load_steps=12 format=3 uid="uid://cno2mmhf4bjci"]
 
 [ext_resource type="Script" path="res://custom_resources/card.gd" id="1_byq7g"]
 [ext_resource type="Script" path="res://custom_resources/card_pile.gd" id="1_x06dg"]
@@ -8,7 +8,10 @@
 [ext_resource type="Resource" uid="uid://c8g8a5tx1sr2p" path="res://characters/warrior/cards/warrior_true_strength.tres" id="4_jteol"]
 [ext_resource type="Resource" uid="uid://cedsow628sq3y" path="res://characters/warrior/cards/warrior_sharp_knife.tres" id="5_7s0ni"]
 [ext_resource type="Resource" uid="uid://bcmktyqt2d7cm" path="res://characters/warrior/cards/warrior_angry_anvil.tres" id="6_mdr4n"]
+[ext_resource type="Resource" uid="uid://cqfqsic3c8puk" path="res://characters/warrior/cards/heal.tres" id="8_gglwl"]
+[ext_resource type="Resource" uid="uid://ww5gylr8yoyh" path="res://characters/warrior/cards/blood_ball.tres" id="9_jlxs4"]
+[ext_resource type="Resource" uid="uid://bsfel8blqx3tb" path="res://characters/warrior/cards/warrior_multiple_riot.tres" id="10_2et7j"]
 
 [resource]
 script = ExtResource("1_x06dg")
-cards = Array[ExtResource("1_byq7g")]([ExtResource("4_jteol"), ExtResource("4_jteol"), ExtResource("3_nwsc5"), ExtResource("3_nwsc5"), ExtResource("3_nwsc5"), ExtResource("3_nwsc5"), ExtResource("2_ur0lo"), ExtResource("2_ur0lo"), ExtResource("2_ur0lo"), ExtResource("2_ur0lo"), ExtResource("4_7uxu8"), ExtResource("4_7uxu8"), ExtResource("4_7uxu8"), ExtResource("5_7s0ni"), ExtResource("5_7s0ni"), ExtResource("5_7s0ni"), ExtResource("6_mdr4n"), ExtResource("6_mdr4n"), ExtResource("6_mdr4n")])
+cards = Array[ExtResource("1_byq7g")]([ExtResource("4_jteol"), ExtResource("4_jteol"), ExtResource("3_nwsc5"), ExtResource("3_nwsc5"), ExtResource("3_nwsc5"), ExtResource("3_nwsc5"), ExtResource("2_ur0lo"), ExtResource("2_ur0lo"), ExtResource("2_ur0lo"), ExtResource("2_ur0lo"), ExtResource("4_7uxu8"), ExtResource("4_7uxu8"), ExtResource("4_7uxu8"), ExtResource("5_7s0ni"), ExtResource("5_7s0ni"), ExtResource("5_7s0ni"), ExtResource("6_mdr4n"), ExtResource("6_mdr4n"), ExtResource("6_mdr4n"), ExtResource("8_gglwl"), ExtResource("8_gglwl"), ExtResource("8_gglwl"), ExtResource("8_gglwl"), ExtResource("8_gglwl"), ExtResource("9_jlxs4"), ExtResource("9_jlxs4"), ExtResource("10_2et7j"), ExtResource("10_2et7j")])

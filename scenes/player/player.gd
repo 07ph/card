@@ -6,10 +6,10 @@ const WHITE_SPRITE_MATERIAL := preload("res://art/white_sprite_material.tres")
 @export var stats: CharacterStats : set = set_character_stats
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
-@onready var animation_player:AnimationPlayer = $AnimationPlayer
 @onready var stats_ui: StatsUI = $StatsUI
 @onready var status_handler: StatusHandler = $StatusHandler
 @onready var modifier_handler: ModifierHandler = $ModifierHandler
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 
 func _ready() -> void:
@@ -41,7 +41,7 @@ func update_stats() -> void:
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("right_mouse"):
-		#Events.battle_over_screen_requested.emit("你获得了胜利!", BattleOverPanel.Type.WIN)
+		Events.battle_over_screen_requested.emit("你获得了胜利!", BattleOverPanel.Type.WIN)
 		return
 
 
@@ -62,8 +62,10 @@ func take_damage(damage: int, which_modifier: Modifier.Type) -> void:
 			sprite_2d.material = null
 			
 			if stats.health <= 0:
-				animation_player.play("died")
-				if animation_player.current_animation == "died":
-					Events.player_died.emit()
-					queue_free()
+				Events.player_died.emit()
+				queue_free()
 	)
+	
+	
+	
+ 

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cqfqsic3c8puk"]
+
+[ext_resource type="Texture2D" uid="uid://d0edy7thj8ce6" path="res://art/heart.png" id="1_7j2hp"]
+[ext_resource type="Script" path="res://characters/warrior/cards/heal.gd" id="2_f7uwj"]
+
+[resource]
+script = ExtResource("2_f7uwj")
+heal_acount = 3
+id = "heal"
+type = 1
+rarity = 0
+target = 0
+cost = 0
+exhausts = true
+icon = ExtResource("1_7j2hp")
+tooltip_text = "[center]【包扎】[/center]
+[center]补充 [color=\"7fb80e\"]3[/color] 血，消耗[/center]."
