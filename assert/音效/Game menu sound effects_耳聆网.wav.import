@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b05uah70ipvx"
+path="res://.godot/imported/Game menu sound effects_耳聆网.wav-598a821c0297f80aaf7d9550f06158e9.sample"
+
+[deps]
+
+source_file="res://assert/音效/Game menu sound effects_耳聆网.wav"
+dest_files=["res://.godot/imported/Game menu sound effects_耳聆网.wav-598a821c0297f80aaf7d9550f06158e9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

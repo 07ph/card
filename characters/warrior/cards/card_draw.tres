@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bf2mhcc8uwnqx"]
+
+[ext_resource type="Texture2D" uid="uid://d0u5e7p4xhlla" path="res://assert/loot/1 Icons/Icons_29.png" id="1_qieuq"]
+[ext_resource type="Script" path="res://characters/warrior/cards/card_draw.gd" id="2_ee41v"]
+[ext_resource type="AudioStream" uid="uid://bvx7vb8qgea3v" path="res://assert/音效/berrybush_hurt2.wav" id="3_venqa"]
+
+[resource]
+script = ExtResource("2_ee41v")
+cardnum = 4
+id = "潦草急就"
+type = 1
+rarity = 1
+target = 0
+cost = 1
+exhausts = false
+icon = ExtResource("1_qieuq")
+tooltip_text = "[center][color=\"2a5caa\"]【潦草急就】[/color] [/center]
+[center]抽四张牌.[/center]"
+sound = ExtResource("3_venqa")

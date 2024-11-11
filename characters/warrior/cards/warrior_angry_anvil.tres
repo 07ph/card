@@ -6,13 +6,13 @@
 
 [resource]
 script = ExtResource("2_npntm")
-id = "warrior_angry_anvil"
+id = "坚毅"
 type = 1
 rarity = 1
 target = 0
 cost = 1
 exhausts = false
 icon = ExtResource("1_3oe33")
-tooltip_text = "[center]【坚毅】[/center]
+tooltip_text = "[center][color=\"2a5caa\"]【坚毅】[/color] [/center]
 [center]获得 [color=\"0044ff\"]%s[/color] 格挡. 消耗一张随机手牌.[/center]"
 sound = ExtResource("3_oo1yl")

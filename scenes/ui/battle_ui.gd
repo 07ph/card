@@ -10,6 +10,9 @@ extends CanvasLayer
 @onready var discard_pile_button: CardPileOpener = %DiscardPileButton
 @onready var draw_pile_view: CardPileView = %DrawPileView
 @onready var discard_pile_view: CardPileView = %DiscardPileView
+@onready var showeducation: Button = %showeducation
+@onready var education: CanvasLayer = $"../education"
+
 
 
 func _ready() -> void:
@@ -17,7 +20,8 @@ func _ready() -> void:
 	end_turn_button.pressed.connect(_on_end_turn_button_pressed)
 	draw_pile_button.pressed.connect(draw_pile_view.show_current_view.bind("抽牌堆", true))
 	discard_pile_button.pressed.connect(discard_pile_view.show_current_view.bind("弃牌堆"))
-
+	showeducation.button_down.connect(education.show)
+	showeducation.button_up.connect(education.hide)
 
 func initialize_card_pile_ui() -> void:
 	draw_pile_button.card_pile = char_stats.draw_pile
@@ -34,7 +38,7 @@ func _set_char_stats(value: CharacterStats) -> void:
 
 func _on_player_hand_drawn() -> void:
 	end_turn_button.disabled = false
-
+	
 
 func _on_end_turn_button_pressed() -> void:
 	end_turn_button.disabled = true

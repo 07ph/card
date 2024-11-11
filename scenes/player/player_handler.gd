@@ -91,7 +91,7 @@ func reshuffle_deck_from_discard() -> void:
 		character.draw_pile.add_card(character.discard.draw_card())
 
 	character.draw_pile.shuffle()
-
+#洗牌
 
 func _on_card_played(card: Card) -> void:
 	if card.exhausts or card.type == Card.Type.POWER:
@@ -106,7 +106,7 @@ func _on_statuses_applied(type: Status.Type) -> void:
 			draw_cards(character.cards_per_turn, true)
 		Status.Type.END_OF_TURN:
 			discard_cards()
-
+#抽牌弃牌
 
 func _on_relics_activated(type: Relic.Type) -> void:
 	match type:
@@ -114,3 +114,7 @@ func _on_relics_activated(type: Relic.Type) -> void:
 			player.status_handler.apply_statuses_by_type(Status.Type.START_OF_TURN)
 		Relic.Type.END_OF_TURN:
 			player.status_handler.apply_statuses_by_type(Status.Type.END_OF_TURN)
+
+
+
+	

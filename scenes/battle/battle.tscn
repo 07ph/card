@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cahno8aso5net"]
+[gd_scene load_steps=25 format=3 uid="uid://cahno8aso5net"]
 
 [ext_resource type="Script" path="res://scenes/battle/battle.gd" id="1_4s751"]
 [ext_resource type="PackedScene" uid="uid://d0efyathkfg74" path="res://scenes/enemy/enemy.tscn" id="2_02s5s"]
@@ -25,6 +25,10 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xyg5u"]
 size = Vector2(256, 100)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wdme8"]
+font_size = 6
+font_color = Color(1, 0.523413, 0.480295, 1)
 
 [node name="Battle" type="Node2D"]
 script = ExtResource("1_4s751")
@@ -66,6 +70,52 @@ position = Vector2(45, 80)
 script = ExtResource("8_3di7i")
 player = NodePath("../Player")
 hand = NodePath("../BattleUI/Hand")
+
+[node name="education" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="manatip" type="Label" parent="education"]
+offset_left = 1.0
+offset_top = 58.0
+offset_right = 61.0
+offset_bottom = 105.0
+text = "打出卡牌会
+花费相应能量
+能量不足将无法打出牌
+每回合都会重置
+    ↓"
+label_settings = SubResource("LabelSettings_wdme8")
+
+[node name="cardtip" type="Label" parent="education"]
+offset_left = 102.0
+offset_top = 73.0
+offset_right = 144.0
+offset_bottom = 110.0
+text = "使用卡牌来战斗
+鼠标悬停可
+阅读卡牌作用
+    ↓"
+label_settings = SubResource("LabelSettings_wdme8")
+
+[node name="cardtip2" type="Label" parent="education"]
+offset_left = 196.0
+offset_top = 120.0
+offset_right = 250.0
+offset_bottom = 157.0
+text = "若没能量  ↑
+你可以结束
+你的回合"
+label_settings = SubResource("LabelSettings_wdme8")
+
+[node name="cardtip3" type="Label" parent="education"]
+offset_left = 109.0
+offset_top = 25.0
+offset_right = 163.0
+offset_bottom = 62.0
+text = "敌人头上是他的意图
+你结束回合后他会
+进行该项行动  →"
+label_settings = SubResource("LabelSettings_wdme8")
 
 [node name="BattleUI" type="CanvasLayer" parent="." groups=["ui_layer"]]
 script = ExtResource("7_18vit")
@@ -109,6 +159,13 @@ grow_vertical = 0
 theme = ExtResource("13_523u4")
 disabled = true
 text = "结束回合"
+
+[node name="showeducation" type="Button" parent="BattleUI"]
+unique_name_in_owner = true
+offset_top = 37.0
+offset_right = 26.0
+offset_bottom = 46.0
+text = "新手教程"
 
 [node name="DrawPileButton" parent="BattleUI" node_paths=PackedStringArray("counter") instance=ExtResource("17_djv03")]
 unique_name_in_owner = true

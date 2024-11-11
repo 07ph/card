@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8brjxju3ex6r"
+path="res://.godot/imported/Death sound effects_耳聆网.mp3-3e03c6aa6c1ce28d09971ff090a85fb1.mp3str"
+
+[deps]
+
+source_file="res://assert/音效/Death sound effects_耳聆网.mp3"
+dest_files=["res://.godot/imported/Death sound effects_耳聆网.mp3-3e03c6aa6c1ce28d09971ff090a85fb1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

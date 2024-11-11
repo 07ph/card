@@ -14,3 +14,4 @@ func execute(targets: Array[Node]) -> void:
 		return
 	
 	player_handler.draw_cards(cards_to_draw)
+	SFXPlayer.play(sound)

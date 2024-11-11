@@ -35,7 +35,7 @@ func _on_treasure_chest_gui_input(event: InputEvent) -> void:
 		return
 	
 	if event.is_action_pressed("left_mouse"):
-		if RNG.instance.randf() < 0.5:	
+		if RNG.instance.randf() < 0.3:	
 			animation_player.play("bad")
 		else:
 			animation_player.play("open")

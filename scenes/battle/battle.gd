@@ -10,7 +10,7 @@ extends Node2D
 @onready var player_handler: PlayerHandler = $PlayerHandler
 @onready var enemy_handler: EnemyHandler = $EnemyHandler
 @onready var player: Player = $Player
-@onready var animation_player: AnimationPlayer = $Player/AnimationPlayer
+
 #初始化变量
 
 func _ready() -> void:
@@ -21,7 +21,7 @@ func _ready() -> void:
 	Events.player_turn_ended.connect(player_handler.end_turn)
 	#玩家回合事件
 	Events.player_hand_discarded.connect(enemy_handler.start_turn)
-	#玩家手牌
+	#玩家手牌丢弃事件信号连接到敌人回合开始
 	Events.player_died.connect(_on_player_died)
 	#玩家死亡事件
 #事件链接

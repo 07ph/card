@@ -40,7 +40,7 @@ func update_stats() -> void:
 	stats_ui.update_stats(stats)
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("right_mouse"):
+	if event.is_action_pressed("pass"):
 		Events.battle_over_screen_requested.emit("你获得了胜利!", BattleOverPanel.Type.WIN)
 		return
 
@@ -60,12 +60,12 @@ func take_damage(damage: int, which_modifier: Modifier.Type) -> void:
 	tween.finished.connect(
 		func():
 			sprite_2d.material = null
-			
 			if stats.health <= 0:
-				Events.player_died.emit()
-				queue_free()
+				animation_player.play("died")
 	)
 	
 	
 	
- 
+func died(damage: int, which_modifier: Modifier.Type) -> void:
+	Events.player_died.emit()
+	queue_free()
